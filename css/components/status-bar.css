@@ -7,6 +7,7 @@
   justify-content: center;
   padding: 5px 3px;
   background-color: rgba(999, 999, 999, 0.85);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .status-bar__column {

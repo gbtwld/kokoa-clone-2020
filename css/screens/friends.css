@@ -40,7 +40,7 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -51,4 +51,19 @@
   font-size: 112px;
   animation: hideSplashScreen 0.4s ease-in-out forwards;
   animation-delay: 2s;
+}
+
+@keyframes spinLogo {
+  0% {
+  }
+  50% {
+    color: var(--yellow);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#splash-screen .fa-comment {
+  animation: spinLogo 2s ease-in-out;
 }
